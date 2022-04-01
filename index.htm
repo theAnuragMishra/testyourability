@@ -9,6 +9,8 @@
         body {
             text-align: center;
             font-size: 2rem;
+            background-repeat: no-repeat;
+            background-size: cover;
 
         }
 
@@ -39,6 +41,21 @@
         .luck {
             font-family: 'Hubballi', cursive;
         }
+
+        .sect a {
+            font-familY: Fredoka;
+            font-size: 2rem;
+        }
+
+        main {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main h2 {
+            font-family: 'Hubballi', cursive;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +64,7 @@
 </head>
 
 <body>
-    <section class="sect">
+    <section class="sect" id="sect">
         <h1>Get ready to test your skills</h1>
         <div class="ipts">
             <input type="text" id="nm" placeholder="Input name"> <br>
@@ -57,10 +74,12 @@
                 <option>Chemistry</option>
                 <option>Maths</option>
             </select>
-            <br><br>
+
+            <br>
             <br>
 
-            <a href="#he" onclick="fn()">Go Ahead</a> </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="fn()">Take the Test</a>
+        </div>
         <br>
         <br>
 
@@ -74,30 +93,27 @@
             <h1 class="luck">Good Luck Ahead!!</h1>
         </div>
     </section>
-    <header class="he" id="he">
+
+
+    <main id="main">
         <h1 id="nameroll"></h1>
-
-    </header>
-
-    <main>
-
-
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </main>
-    <footer>
         <h2>Happy April Fool :)</h2>
-        <a href="https://theanuragmishra.github.io/all/">More sites from me</a>
-    </footer>
+        <a target="_blank" href="https://theanuragmishra.github.io/all/">More sites from me</a>
+
+    </main>
+
+
     <script>
         function fn() {
             var nam = document.getElementById('nm').value;
-            // alert(nam);
+
             document.getElementById('nameroll').innerHTML = "Get rickrolled, " + nam + " ! Hahaha !!";
             var resultbox = document.getElementById('nameroll');
             resultbox.setAttribute('style', 'text-align: center; display:block; font-family:Fredoka');
+            document.getElementById("sect").style.display = "none";
+            document.getElementById("main").style.display = "block";
+            document.body.style.backgroundImage =
+                "url('https://cdn.pixabay.com/photo/2015/05/15/09/59/advertise-768064_960_720.jpg')";
 
         }
     </script>
