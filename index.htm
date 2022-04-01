@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Hubballi&family=Noto+Sans&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+        body {
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        .sect {
+            width: 100vw;
+            height: 100vh;
+            background: url('https://cdn.pixabay.com/photo/2022/01/25/12/53/tree-6966126_960_720.jpg');
+            background-blend-mode: lighten;
+            font-family: Roboto;
+
+        }
+
+        .sect input[type=text] {
+            width: 25rem;
+            height: 2rem;
+            font-size: 1.3rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .sect select {
+            width: 20rem;
+            height: 3rem;
+            font-size: 1.3rem;
+            font-family: 'Hubballi', cursive;
+            margin-top: 10px;
+        }
+
+        .luck {
+            font-family: 'Hubballi', cursive;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ultimate test</title>
+</head>
+
+<body>
+    <section class="sect">
+        <h1>Get ready to test your skills</h1>
+        <div class="ipts">
+            <input type="text" id="nm" placeholder="Input name"> <br>
+            <select>
+                <option>Select Subject</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Maths</option>
+            </select>
+            <br><br>
+            <br>
+
+            <a href="#he" onclick="fn()">Go Ahead</a> </div>
+        <br>
+        <br>
+
+        <div class=" fm">
+            <fieldset>
+                <legend>Details</legend>
+                <div>Maximum Marks: 20</div>
+
+                <div>Time: 10 minutes</div>
+            </fieldset>
+            <h1 class="luck">Good Luck Ahead!!</h1>
+        </div>
+    </section>
+    <header class="he" id="he">
+        <h1 id="nameroll"></h1>
+
+    </header>
+
+    <main>
+
+
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </main>
+    <footer>
+        <h2>Happy April Fool :)</h2>
+        <a href="https://theanuragmishra.github.io/all/">More sites from me</a>
+    </footer>
+    <script>
+        function fn() {
+            var nam = document.getElementById('nm').value;
+            // alert(nam);
+            document.getElementById('nameroll').innerHTML = "Get rickrolled, " + nam + " ! Hahaha !!";
+            var resultbox = document.getElementById('nameroll');
+            resultbox.setAttribute('style', 'text-align: center; display:block; font-family:Fredoka');
+
+        }
+    </script>
+</body>
+
+</html>
